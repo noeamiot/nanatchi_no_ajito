@@ -26,4 +26,4 @@ The pictures in all the subfolders of `natatchi_no_ajito_theme/images/` are take
 
 ## Result
 
-![Result](https://github.com/noeamiot/nanatchi_no_ajito/nanatchi_no_ajito.png "Nanatchi no ajito GRUB theme")
+![Result](https://github.com/noeamiot/nanatchi_no_ajito/blob/master/nanatchi_no_ajito.png "Nanatchi no ajito GRUB theme")
