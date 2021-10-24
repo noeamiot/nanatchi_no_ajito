@@ -1,0 +1,111 @@
+#general settings
+title-text: "- Nanatchi no ajito GRUB -"
+title-color: "#ffffff"
+title-font: "DejaVu Sans Mono Regular 40"
+desktop-image: "images/background.png"
+
+# Terminal settings
+terminal-box: "images/terminal/terminal_box_*.png"
+terminal-font: "Unifont Regular 16"
+terminal-width: "90%"
+terminal-height: "90%"
+terminal-left: "5%"
+terminal-top: "5%"
+
+#boot menu box settings
++ boot_menu {
+	left = 10%
+	width = 80%
+	top = 15%
+	height = 55%
+
+	selected_item_color= "#FFF"
+	selected_item_pixmap_style = "images/boot_menu/highlight_*.png"
+
+	icon_height = 30
+	icon_width = 30
+
+	item_icon_space = 20%
+	item_font = "DejaVu Sans Mono Regular 20"
+	item_color = "#000"
+
+	menu_pixmap_style = "images/boot_menu/boot_menu_*.png"
+}
+
+# Progress bar settings
++ progress_bar {
+	left = 20%
+	top = 86%
+	height = 40
+	width = 60%
+
+	id = "__timeout__"
+	text = "Automatically booting in %d seconds"
+	show_text = true
+
+	font = "DejaVu Sans Mono Regular 20"
+	text_color = "#fa0a16"
+	border_color = "#ffffff"
+
+	bar_style = "images/progress_bar/progress_bar_*.png"
+	highlight_style = "images/progress_bar/progress_highlight_*.png"
+}
+
+# Help bar at the bottom settings
++ hbox {
+	top = 96%
+	left = 45%
+	align = "right"
+	font = "DejaVu Sans Mono Regular 24"
+
+	+ label {
+		text = "↑↓"
+		color = "#fa0a16"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+	+ label {
+		text = ": Select     "
+		color = "#ffffff"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+	+ label {
+		text = "Enter"
+		color = "#fa0a16"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+	+ label {
+		text = ": Boot     "
+		color = "#ffffff"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+	+ label {
+		text = "e"
+		color = "#fa0a16"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+	+ label {
+		text = ": Edit     "
+		color = "#ffffff"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+	+ label {
+		text = "c"
+		color = "#fa0a16"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+	+ label {
+		text = ": Command-line     "
+		color = "#ffffff"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+	+ label {
+		text = "Esc"
+		color = "#fa0a16"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+	+ label { 
+		text = ": Back     "
+		color = "#ffffff"
+		font = "DejaVu Sans Mono Regular 24"
+	}
+}
